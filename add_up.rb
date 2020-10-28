@@ -5,3 +5,5 @@ end
 add_up(2)
 add_up(3)
 add_up(4)
+
+# for loop
