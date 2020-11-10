@@ -1,31 +1,16 @@
-# answer = ""
-# list = []
-# puts "Enter what you want to add to list: "
-# answer = gets.chomp
-# list << answer
-# until answer == ""
-#     print "Enter what you want to add to list: "
-#     answer = gets.chomp
-#     list << answer
-# end
+# (2) Write a program called sorted_words.rb. It should prompt the user for words and add each to an array. The user should be able to add as many words as they like, until they just hit enter to return a blank word. Then sort the array using the sort method and print it out.
 
-# # puts list.sort()
-# print list.sort().join(" ")
-
-puts 'Type in as many words as you\'d like. When you\'re finished, press enter on an empty line'
-array = []
-input = ' '
-while input != ''
-  input = gets.chomp
-  array.push input
+def sort_words
+  words = []
+  until false
+    print "Enter what you want to add to list: "
+    answer = gets.chomp
+    if answer.length == 0
+      break
+    end
+    words << answer
+  end
+  puts words.sort().join(", ")
 end
 
-puts
-puts array.sor
-
-
-
-
-
-
-
+sort_words()
